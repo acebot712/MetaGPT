@@ -4,12 +4,12 @@ import asyncio
 import sys
 sys.path.insert(0, "/Users/abhijoysarkar/Projects/ai/theoremone/metagpt")
 
-from metagpt.roles.researcher import RESEARCH_PATH, Researcher
+from metagpt.roles.airesearcher import RESEARCH_PATH, AIResearcher
 
 
 async def main():
-    topic = "dataiku vs. datarobot"
-    role = Researcher(language="en-us")
+    topic = "A technical deep dive into LLM Agents"
+    role = AIResearcher(language="en-us")
     await role.run(topic)
     print(f"save report to {RESEARCH_PATH / f'{topic}.md'}.")
 

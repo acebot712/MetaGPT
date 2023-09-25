@@ -22,9 +22,9 @@ class Report(BaseModel):
 class AIResearcher(Role):
     def __init__(
         self,
-        name: str = "David",
-        profile: str = "Researcher",
-        goal: str = "Gather information and conduct research",
+        name: str = "Abhijoy",
+        profile: str = "AI Researcher",
+        goal: str = "Write a long comprehensive, detailed and engaging blog post demonstrating high technical knowledge",
         constraints: str = "Ensure accuracy and relevance of information",
         language: str = "en-us",
         **kwargs,
